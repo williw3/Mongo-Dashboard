@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Sloth</title>
+</head>
+<body>
+    <h3>Edit sloth Here</h3>
+    <form action="/sloth/<%= sloths[0].id%>" method="POST">
+        <label for="name">Sloth Name:</label><br>
+        <input type="text" name="name" value="<%= sloths[0].name %>"><br>
+        <label for="age">Sloth Age:</label><br>
+        <input type="text" name="age" value="<%= sloths[0].age %>"><br>
+        <label for="quote">Your Quote:</label><br>
+        <textarea name="quote" id="" cols="60" rows="6" value="<%= sloths[0].quote %>"></textarea><br>
+        <input type="submit" value="Edit Sloth">
+    </form>
+    <h5>Last Update: <%=sloths[0].updatedAt %></h5>
+    <a href="/">Cancel</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Show Sloth</title>
+</head>
+<body>
+    <h3>This is the page for: <%= sloths[0].name %></h3>  
+    <h4>Age: <%= sloths[0].age %></h4>
+    <h4>Quote: "<%= sloths[0].quote %>"</h4> 
+    <h4>Created At: <%= sloths[0].createdAt %></h4> 
+    <hr>   
+      
+    <a href="/">Home</a> | <a href="/sloth/edit/<%= sloths[0].id %>">Edit</a> | <a href="/sloth/destroy/<%= sloths[0].id %>">Delete</a>
+</body>
+</html>
